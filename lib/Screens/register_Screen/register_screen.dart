@@ -97,7 +97,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              AppStrings.signIn,
+                              AppStrings.signUp,
                               style: Theme.of(context)
                                   .textTheme
                                   .headline3!
@@ -225,7 +225,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             navigateAndFinish(context, const HomeScreen());
                           }
                         },
-                        text: AppStrings.signIn,
+                        text: AppStrings.signUp,
                       ),
                       const SizedBox(
                         height: AppSize.s14,
