@@ -28,7 +28,7 @@ class OnBoardingScreen extends StatefulWidget {
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
   var boardController = PageController();
-
+  //boarding data. (image, title, subtitle)
   List<BoardingModel> boarding = [
     BoardingModel(
       image: ImageAssets.onboardingLogo1,
@@ -54,6 +54,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     return Scaffold(
       backgroundColor: ColorManager.white,
       appBar: AppBar(
+
         backgroundColor: ColorManager.white,
         actions: [
           Padding(
@@ -123,6 +124,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   ),
                   count: boarding.length,
                 ),
+              
               ],
             ),
             SizedBox(
@@ -159,6 +161,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     );
   }
 
+//boarding Item design
   Widget buildBoardingItem(BoardingModel model) => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -188,9 +191,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               style: const TextStyle(fontSize: 16.0, color: ColorManager.grey),
             ),
           ),
-          // const SizedBox(
-          //   height: 30.0,
-          // ),
         ],
       );
 }

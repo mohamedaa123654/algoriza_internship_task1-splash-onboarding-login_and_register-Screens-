@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../resources/color_manager.dart';
 
+//General Button For App
 class DefaultButton extends StatelessWidget {
   VoidCallback? onPressed;
   String text;
@@ -48,6 +49,7 @@ class DefaultButton extends StatelessWidget {
   }
 }
 
+//Logo Of App
 class TextLogo extends StatelessWidget {
   double textSize;
   TextLogo({Key? key, this.textSize = 32}) : super(key: key);
@@ -77,6 +79,7 @@ class TextLogo extends StatelessWidget {
   }
 }
 
+//General TextButton For App
 class DefaultTextButton extends StatelessWidget {
   VoidCallback? function;
   String text;
@@ -95,6 +98,7 @@ class DefaultTextButton extends StatelessWidget {
   }
 }
 
+//General FormField For App
 class DefaultFormField extends StatelessWidget {
   TextEditingController controller;
   TextInputType type;
@@ -178,13 +182,14 @@ class DefaultFormField extends StatelessWidget {
   }
 }
 
+//Navigat to Screen
 void navigateTo(context, widget) => Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => widget,
       ),
     );
-
+//Navigat to Screen And Close old Screen
 void navigateAndFinish(
   context,
   widget,
@@ -198,19 +203,3 @@ void navigateAndFinish(
         return false;
       },
     );
-
-// void showToast({
-//   required String text,
-//   required ToastStates state,
-// }) =>
-//     Fluttertoast.showToast(
-//       msg: text,
-//       toastLength: Toast.LENGTH_LONG,
-//       gravity: ToastGravity.BOTTOM,
-//       timeInSecForIosWeb: 5,
-//       backgroundColor: chooseToastColor(state),
-//       textColor: Colors.white,
-//       fontSize: 16.0,
-//     );
-
-// enum

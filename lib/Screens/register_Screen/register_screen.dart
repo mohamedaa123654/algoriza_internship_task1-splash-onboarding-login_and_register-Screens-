@@ -286,7 +286,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   IconData suffix = Icons.visibility_outlined;
 
   bool isPassword = true;
-
+//Phange Password Visibility and suffixs icon
   void changePasswordVisibility() {
     isPassword = !isPassword;
     suffix =

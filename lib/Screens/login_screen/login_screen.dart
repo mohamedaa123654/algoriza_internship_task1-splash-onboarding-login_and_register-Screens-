@@ -12,6 +12,7 @@ import '../../shared/resources/values_manager.dart';
 import '../register_Screen/register_screen.dart';
 
 class LoginScreen extends StatelessWidget {
+  // Controllers
   final TextEditingController emailController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
   final formKey = GlobalKey<FormState>();
